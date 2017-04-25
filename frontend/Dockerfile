@@ -1,4 +1,4 @@
-FROM node:6.10.2
+FROM node:6.10.2-slim
 
 RUN apt-get update && apt-get install -y \
   vim
@@ -12,8 +12,6 @@ COPY package.json \
   webpack.config.js \
   .babelrc \
   /app/
-
-COPY test.json /app/five.json
 
 RUN yarn install
 
