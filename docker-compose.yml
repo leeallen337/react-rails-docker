@@ -23,9 +23,9 @@ services:
     image: 'postgres:9.6.2'
     restart: always
     environment:
-      POSTGRES_USER: 'my_app'
-      POSTGRES_PASSWORD: 'password'
-      POSTGRES_DB: 'foo_bar'
+      POSTGRES_USER: 'sb_app'
+      POSTGRES_PASSWORD: 'password@sb'
+      POSTGRES_DB: 'sb_db'
     ports:
       - "5432:5432"
     volumes:
