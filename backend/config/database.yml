@@ -1,10 +1,10 @@
 development: &default
   adapter: postgresql
   encoding: unicode
-  database: foo_bar
+  database: sb_db
   pool: 5
-  username: my_app
-  password: password
+  username: sb_app
+  password: password@sb
   host: postgres
 
 test:

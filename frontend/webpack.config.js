@@ -31,6 +31,12 @@ const config = {
   },
   devServer: {
     historyApiFallback: true,
+    proxy: {
+      '/api': {
+        changeOrigin: true,
+        target: 'http://backend:3000'
+      }
+    },
     host: '0.0.0.0'
   }
 };
